@@ -1,0 +1,21 @@
+schema_version: 1
+id: research
+version: 1
+mode: agent
+required_inputs: [topic]
+entry: topic_selection
+nodes:
+  - id: topic_selection
+    type: agent
+    skill: topic-selection
+    task: Create a concise research topic plan for the supplied topic.
+    inputs:
+      topic: "{{input:topic}}"
+    outputs:
+      - name: topic_plan
+        required: true
+    terminal: true
+budgets:
+  max_visits: 3
+  max_agent_turns: 3
+  max_duration_ms: 3600000

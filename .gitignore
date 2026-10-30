@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.skill-workflows/runs/
+.env
+.env.*
+!.env.example

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "skill-graph": {
+      "command": "npx",
+      "args": ["-y", "@akun-python/skill-graph"],
+      "env": {
+        "SKILL_GRAPH_CWD": "C:/path/to/your/project",
+        "SKILL_GRAPH_PROJECT_ROOTS": "C:/path/to/your/project/.skill-workflows",
+        "SKILL_GRAPH_USER_ROOTS": "C:/Users/you/.skill-graph"
+      }
+    }
+  }
+}

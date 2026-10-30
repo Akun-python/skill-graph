@@ -1,0 +1,39 @@
+{
+  "name": "@akun-python/skill-graph",
+  "version": "0.1.0",
+  "description": "Portable, contract-checked workflows for agents using SKILL.md packages",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "examples"
+  ],
+  "bin": {
+    "skill-graph": "dist/cli.js",
+    "skill-graph-mcp": "dist/adapters/mcp/server.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/cli.js",
+    "mcp": "node dist/adapters/mcp/server.js",
+    "test": "node --test dist/tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "js-yaml": "4.1.1",
+    "proper-lockfile": "4.1.2",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "4.0.9",
+    "@types/node": "22.15.21",
+    "@types/proper-lockfile": "4.1.4",
+    "typescript": "5.8.3"
+  }
+}

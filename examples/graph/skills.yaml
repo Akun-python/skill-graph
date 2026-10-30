@@ -1,0 +1,6 @@
+schema_version: 1
+skills:
+  - id: topic-selection
+    version: 1
+    path: skills/topic-selection
+    produces: [topic-plan]
